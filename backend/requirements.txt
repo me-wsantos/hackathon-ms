@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+aiofiles
+pyodbc
+openai
+azure-ai-formrecognizer
+azure-core
+azure-storage-blob
+dotenv
