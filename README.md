@@ -1,13 +1,13 @@
 # Hackaton Microsoft Innovation Challenge March 2025
 
-![capa]()
+![capa](https://github.com/devcaiada/hackathon-ms/blob/main/assets/intro_azure.png?raw=true)
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pushpin.png" alt="Pushpin" width="25" height="25" /> About the Project
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pushpin.png" alt="Pushpin" width="35" height="35" /> About the Project
 This project was developed for Microsoft's Hackathon, in the "AI for Supported Employment Job Coaches" category. The goal is to use artificial intelligence to assist job coaches who support individuals with disabilities or other employment barriers in entering the workforce.
 
 Job coaches play a crucial role in guiding these individuals through job applications, skill development, and workplace integration. However, their resources are often limited, and administrative tasks take up significant time. This application helps job coaches by automating resume analysis, recommending courses to enhance candidates' qualifications, and providing an AI-driven interview process to improve efficiency and fairness in hiring.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Technologies Used
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="35" height="35" /> Technologies Used
 
 - **Azure Document Intelligence**: Extracts key information from uploaded resumes.
 - **Azure SQL Database (Free Tier)**: Stores extracted candidate information.
@@ -16,7 +16,7 @@ Job coaches play a crucial role in guiding these individuals through job applica
 - **FastAPI (Python)**: Backend to process requests and manage service communication.
 - **Next.js**: Frontend for user interface.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Ferris%20Wheel.png" alt="Ferris Wheel" width="25" height="25" /> Application Workflow
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Ferris%20Wheel.png" alt="Ferris Wheel" width="40" height="40" /> Application Workflow
 
 1. **Resume Upload**
    - The candidate uploads their resume.
@@ -39,7 +39,7 @@ Job coaches play a crucial role in guiding these individuals through job applica
    - If approved, the process is completed, and the candidate is ready for employment opportunities.
    - If not approved, additional courses are suggested, and the candidate can retry.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" alt="Bullseye" width="25" height="25" /> How This Project Supports Inclusive Employment
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" alt="Bullseye" width="35" height="35" /> How This Project Supports Inclusive Employment
 This project directly addresses the challenges faced by individuals with disabilities in securing employment by:
 - **Reducing Bias**: AI-driven evaluation ensures a fairer selection process based on skills rather than subjective biases.
 - **Enhancing Accessibility**: Automating resume analysis and interview processes allows candidates with disabilities to go through a structured and inclusive hiring experience.
@@ -47,7 +47,7 @@ This project directly addresses the challenges faced by individuals with disabil
 - **Personalized Training Paths**: AI-generated recommendations guide candidates toward specific skills required for employment, increasing their chances of success.
 - **Supporting Diverse Industries**: The system helps candidates find job opportunities in retail, administration, healthcare, IT, food services, and manufacturing by matching their skills with market demands.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium%20Skin%20Tone.png" alt="Man Technologist Medium Skin Tone" width="25" height="25" /> How to Run the Project
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium%20Skin%20Tone.png" alt="Man Technologist Medium Skin Tone" width="35" height="35" /> How to Run the Project
 
 ### **1. Configure Azure Credentials**
 Before starting, set up your credentials in the **.env** file:
