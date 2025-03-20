@@ -1,0 +1,5 @@
+app\services\chatService.ts:
+- validar se o nome do colaborador está sendo retornado pelo agente IdentifyNameAgent()
+- concatenar o nome retornado pelo agente com o símbolo '%' para fazer a pesquina no banco de dados com sql. Ex: 'Claudio Nadai' tem que ficar 'Claudio%Nadai'
+- chamar o service para pesquisar o id da folha: getIdFolhaPorNome() - app\api\data-analysis\getIdFolhaPorNome\route.ts
+- recuperar o id da folha e chamar a funcao getProventos em app\api\data-analysis\getProventos\route.ts, para retornar os proventos

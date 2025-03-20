@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #ffff;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+h1 {
+  @apply text-3xl font-bold mb-4;
+}
+
+p {
+  @apply mb-4;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+strong {
+  @apply font-bold text-indigo-400;
+}
+
+em {
+  @apply italic text-pink-500;
+}
+
+
+.btn-primary {
+  @apply bg-indigo-500 text-white font-bold py-2 px-4 rounded-xl hover:bg-indigo-700 transition-all duration-200 ease-in-out;
+}
+
+.btn-primary:disabled {
+  @apply bg-indigo-500 text-white font-bold py-2 px-4 rounded-xl opacity-50 cursor-not-allowed;
+}
+
+.chat-container {
+  @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white bg-opacity-5 h-[calc(100vh-450px)] p-4;
+}
+
+.chat-messages {
+  @apply flex flex-col h-full overflow-x-auto mb-4 overflow-scroll;
+}
+
+/* .upload-section {
+  @apply flex  mb-4;
+}
+ */
+
+/* Animations */
+
+.fade-in { animation: fadeIn .3s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.loader-button {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader-button::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
