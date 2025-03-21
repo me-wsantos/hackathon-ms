@@ -1,28 +1,24 @@
 ## HACKATON MICROSOFT
-## Projeto: Connection.ai - App para análise curricular
-:earth_americas: <a href="https://lemon-tree-0971eed0f.6.azurestaticapps.net/" target="_blank">Link para o projeto</a>
+## Project: Connection.ai - Curriculum Analysis App
+:earth_americas: <a href="https://lemon-tree-0971eed0f.6.azurestaticapps.net/" target="_blank">Link to project</a>
 <br>
 <hr>
 
-### :zap: Tecnologias
-* NextJs 15.0.2
+### :zap: Technologies
+* NextJs 14
 * Node v20.9.0
-* React ^19
+* React ^18
 
 <br>
 <hr>
 
-## :computer: Deploy
+## :computer: Deployment
 
-##### 1 - Baixar o código atualizado
-  `git pull`
-
-##### 2 - Instalar dependências
+##### 1 - Install dependencies
   `npm install`
 
-
-##### 5- Fazer o build da aplicação
+##### 2- Build the application
   `npm run build`
 
-##### 6 - Iniciar a aplicação
+##### 3 - Start the application
   `pm2 start npm --name "connection.ai" -- start`
