@@ -65,52 +65,37 @@ A solução é composta pelos seguintes componentes principais:
    - Executa o processamento assíncrono dos currículos e a geração de plano de carreira e questionário de entrevistas.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Flying%20Saucer.png" alt="Flying Saucer" width="35" height="35" /> Tecnologias Utilizadas
-- **Next.js**: Framework React para desenvolvimento de aplicações web.
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
-- **Tailwind CSS**: Framework CSS para estilização.
-- **Prisma**: ORM para banco de dados.
-- **Azure Storage Blob**: Serviço de armazenamento de blobs da Azure.
-- **OpenAI**: API para integração com modelos de linguagem.
-- **Axios**: Cliente HTTP para fazer requisições.
+- **Azure Storage**: Serviço de armazenamento escalável e durável da Microsoft Azure para armazenar dados não estruturados.
+- **Azure Functions**: Plataforma de computação serverless da Azure que permite executar pequenos trechos de código (funções) em resposta a eventos.
+- **Azure API Management**: Serviço da Azure para publicar, proteger, transformar e analisar APIs, permitindo o gerenciamento centralizado do acesso a back-ends e a criação de gateways de API.
+- **Azure Document Intelligence (antigo Azure Form Recognizer)**: Serviço da Azure que utiliza inteligência artificial para extrair texto, pares de chave-valor, tabelas e estruturas de documentos.
+- **Azure OpenAI**: Serviço da Azure que fornece acesso aos modelos de linguagem avançados da OpenAI permitindo a criação de aplicações de inteligência artificial.
+- **Azure Application Insights**: Serviço de monitoramento de desempenho de aplicações da Azure, que coleta dados de telemetria para identificar gargalos, diagnosticar problemas e otimizar a experiência do usuário.
+- **Azure Key Vault**: Serviço da Azure para armazenar e gerenciar segredos (senhas, chaves de API, certificados) de forma segura, controlando o acesso e garantindo a conformidade com políticas de segurança.
+- **Python**: Linguagem de programação de alto nível, versátil e amplamente utilizada em diversas áreas, incluindo desenvolvimento web, análise de dados e inteligência artificial.
+- **Next.js**: Framework React que oferece estrutura e funcionalidades adicionais para o desenvolvimento de aplicações web, como roteamento, renderização no servidor e otimizações de desempenho.
+- **React**: Biblioteca JavaScript para construir interfaces de usuário (UI) interativas e reutilizáveis, baseada em componentes.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática opcional, permitindo detecção de erros em tempo de desenvolvimento e melhorando a manutenibilidade do código.
+- ** Tailwind CSS**: Framework CSS utilitário que oferece classes pré-definidas para estilização rápida e consistente de elementos HTML.
+- **Axios**: Cliente HTTP baseado em Promises para fazer requisições a serviços web, suportando cancelamento de requisições, interceptação de responses e proteção contra XSRF.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="30" height="30" /> Funcionalidades
 - **Análise de Currículos**: Upload de currículos em formatos PDF, PNG, JPG e JPEG para análise.
-- **Chatbot**: Assistente virtual para responder perguntas sobre análise de currículos.
-- **Análise de Dados**: Ferramentas para análise de folhas de pagamento e identificação de discrepâncias.
+- **Chatbot**: Assistente virtual para responder perguntas sobre o perfil do candidato.
 - **Perfil do Candidato**: Visualização de informações detalhadas sobre o candidato, incluindo habilidades e experiências profissionais.
+- **Plano de carreira**: Geração de um plano de carreira personalizado para o candidato.
+- **Questionário de entrevista**: Geração de questionário de entrevistá técnica personalizado.
 
 ![front](https://github.com/devcaiada/connection.ai/blob/main/assets/front.png?raw=true)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Ferris%20Wheel.png" alt="Ferris Wheel" width="40" height="40" /> Fluxo de Funcionamento
 1. **Upload do currículo** via frontend.
 2. **Armazenamento temporário no Azure Storage**.
-3. **Processamento pelo Document Intelligence**, que extrai os dados estruturados.
-4. **Envio direto dos dados extraídos para o Azure OpenAI**, sem persistência em banco de dados.
-5. **Geração de insights e feedback sobre o currículo**.
-6. **Criação de simulação de entrevista personalizada** com base no perfil do candidato.
-7. **Retorno das informações** para o frontend.
-
-### **Estrutura de Diretórios**
-```
-app/        -> Contém os componentes, contextos, dados, fontes, interfaces, serviços e utilitários da aplicação.
-api/        -> Contém as rotas da API para diferentes funcionalidades como análise de dados e upload de currículos.
-components/ -> Contém os componentes React utilizados na aplicação.
-context/    -> Contém o contexto da aplicação para gerenciamento de estado.
-data/       -> Contém recursos de análise de dados.
-fonts/      -> Contém as fontes utilizadas na aplicação.
-interfaces/ -> Contém as interfaces TypeScript utilizadas na aplicação.
-services/   -> Contém os serviços para comunicação com APIs e outras funcionalidades.
-utils/      -> Contém utilitários para manipulação de dados.
-prisma/     -> Contém o esquema do banco de dados Prisma.
-public/     -> Contém arquivos públicos como imagens.
-```
-
-### **Scripts Disponíveis**
-- `npm run dev`: Inicia a aplicação em modo de desenvolvimento.
-- `npm run build`: Cria o build de produção da aplicação.
-- `npm start`: Inicia a aplicação em modo de produção.
-- `npm run lint`: Executa o linter para verificar problemas no código.
+3. **Processamento pelo Document Intelligence**, modelo treinado para extrair os dados de forma estruturada.
+4. **Geração do plano de carreira através do serviço OpenAI**.
+5. **Geração do questionário de entrevista através do serviço OpenAI**.
+6. **Retorno das informações** para o frontend.
+7. **Interação com chatbot** para responder perguntas sobre o candidato.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Spiral Calendar" width="35" height="35" /> Presentation
 
@@ -130,6 +115,14 @@ Power Point de apresentação:
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium%20Skin%20Tone.png" alt="Man Technologist Medium Skin Tone" width="35" height="35" /> Como Executar o Projeto
 
 ### **Pré-requisitos**
+- Conta na **Azure** com acesso ao **Azure OpenAI, Document Intelligence e Storage**.
+- **Node.js** e **Next.js** instalados para rodar o frontend.
+- **Python 3.8+** e **Azure Functions Core Tools** para o backend.
+
+
+[README do frontend](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme)
+
+### **Backend**
 - Conta na **Azure** com acesso ao **Azure OpenAI, Document Intelligence e Storage**.
 - **Node.js** e **Next.js** instalados para rodar o frontend.
 - **Python 3.8+** e **Azure Functions Core Tools** para o backend.
