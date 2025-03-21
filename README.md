@@ -79,12 +79,12 @@ The solution consists of the following main components:
 - ** Tailwind CSS**: Utility CSS framework that offers pre-defined classes for quick and consistent styling of HTML elements.
 - **Axios**: Promise-based HTTP client for making requests to web services, supporting request cancellation, response interception, and protection against XSRF.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="30" height="30" /> Funcionalidades
-- **Análise de Currículos**: Upload de currículos em formatos PDF, PNG, JPG e JPEG para análise.
-- **Chatbot**: Assistente virtual para responder perguntas sobre o perfil do candidato.
-- **Perfil do Candidato**: Visualização de informações detalhadas sobre o candidato, incluindo habilidades e experiências profissionais.
-- **Plano de carreira**: Geração de um plano de carreira personalizado para o candidato.
-- **Questionário de entrevista**: Geração de questionário de entrevistá técnica personalizado.
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="30" height="30" /> Functionalities
+- **Resume Analysis**: Upload resumes in PDF, PNG, JPG, and JPEG formats for analysis.
+- **Chatbot**: Virtual assistant to answer questions about the candidate's profile.
+- **Candidate Profile**: View detailed information about the candidate, including skills and professional experiences.
+- **Career Plan**: Generation of a personalized career plan for the candidate.
+- **Interview Questionnaire**: Generation of a personalized technical interview questionnaire.
 
 ![front](https://github.com/devcaiada/connection.ai/blob/main/assets/front.png?raw=true)
 
