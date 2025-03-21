@@ -4,7 +4,7 @@
 
 Connection.ai is an innovative artificial intelligence platform dedicated to transforming the way people with disabilities are prepared and connected to supported employment opportunities. Our goal is to overcome barriers and promote inclusion in the labor market, ensuring that each individual receives the necessary support to achieve professional success.
 
-### **Fundamental principles::**
+### **Fundamental principles:**
 - **Inclusion**: We develop solutions that consider the specific needs of people with disabilities, from the analysis of skills and interests to the identification of suitable employment opportunities.
 - **Personalization**: We offer individualized support, including professional guidance, skills training, and continuous monitoring, to ensure that each person has the tools and support needed to thrive.
 - **Empowerment**: We believe in the potential of each individual and strive to create an environment where people with disabilities can achieve their independence and realize their career goals.
