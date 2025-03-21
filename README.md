@@ -123,7 +123,7 @@ Power Point de apresentação:
 - Siga as intruções no [README do projeto](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme) para executar a aplicação.
 
 ### **Backend**
-- Siga as intruções no [README do projeto](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme) para executar a aplicação.
+- Siga as intruções no [README do projeto](https://github.com/me-wsantos/hackathon-ms/tree/main/backend#readme) para executar a aplicação.
 
 ### **Contato** <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Love%20Letter.png" alt="Love Letter" width="25" height="25" />
 Para dúvidas ou sugestões, entre em contato com a gente.
