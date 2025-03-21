@@ -119,39 +119,11 @@ Power Point de apresentação:
 - **Node.js** e **Next.js** instalados para rodar o frontend.
 - **Python 3.8+** e **Azure Functions Core Tools** para o backend.
 
-
-[README do frontend](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme)
+### **Frontend**
+- Siga as intruções no [README do projeto](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme) para executar a aplicação.
 
 ### **Backend**
-- Conta na **Azure** com acesso ao **Azure OpenAI, Document Intelligence e Storage**.
-- **Node.js** e **Next.js** instalados para rodar o frontend.
-- **Python 3.8+** e **Azure Functions Core Tools** para o backend.
-
-### **Configuração e Deploy**
-1. Configure as variáveis de ambiente no **.env** com as credenciais do Azure.
-
-2. Instale as dependências do backend:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Inicie o backend localmente:
-   ```bash
-   func start
-   ```
-
-4. Instale e execute o frontend:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-5. Realize o deploy para o Azure (Opcional):
-   ```bash
-   az webapp up --name NomeDoApp
-   ```
-
+- Siga as intruções no [README do projeto](https://github.com/me-wsantos/hackathon-ms/tree/main/frontend#readme) para executar a aplicação.
 
 ### **Contato** <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Love%20Letter.png" alt="Love Letter" width="25" height="25" />
 Para dúvidas ou sugestões, entre em contato com a gente.
