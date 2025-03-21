@@ -1,43 +1,11 @@
 "use client"
 import useAppContext from "../context/appContext";
 import { GoChecklist } from "react-icons/go";
-import { useEffect, useState } from "react";
-
-interface Props {
-  Perguntas: string[]
-}
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export const Interview = () => {
-  const [questions, setQuestions] = useState<any[]>([])
   const { interview } = useAppContext();
-
-  useEffect(() => {
-    let objQuestion = {} as Props
-
-    if (typeof interview === "string") {
-      let cleanedString = "";
-
-      if (interview) {
-        cleanedString = String(interview).replace(/```json\s*/g, "").replace(/```$/, "");
-
-        objQuestion = JSON.parse(cleanedString)
-
-      }
-    } else if (typeof interview === "object") {
-      objQuestion = interview
-    }
-
-
-    if (objQuestion != null) {
-      const { Perguntas } = objQuestion
-
-      if (Perguntas && Perguntas.length) {
-        const arrayQuestions = Perguntas.toString().split("?,")
-        setQuestions(arrayQuestions)
-      }
-    }
-
-  }, [interview]);
 
   return (
     <div className="flex flex-col flex-shrink-0 rounded-2xl h-[calc(100vh-150px)] p-4">
@@ -53,16 +21,9 @@ export const Interview = () => {
             </div>
             <div className="flex mt-8">
               <div className="w-full pr-0">
-                {
-                  questions.map((item: string, i: number) => (
-                    <div
-                      key={i}
-                      className={`w-full py-8 ${i > 0 ? 'border-t-2' : ''}`}
-                    >
-                      <span className="font-bold">{i + 1}</span> - {item}{item.endsWith("?") ? "" : "?"}
-                    </div>
-                  ))
-                }
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {interview}
+                </ReactMarkdown>
               </div>
             </div>
           </section>

@@ -8,7 +8,7 @@ import { GoChecklist } from "react-icons/go";
 import { MdOutlineUploadFile } from "react-icons/md";
 import Loading from "./loading";
 
-const icons = [
+export const menuItems = [
   {
     icon: <HiOutlineHome size={28} className="mr-2 text-white mb-2" />,
     text: "Home"
@@ -59,14 +59,14 @@ export function Sidebar() {
   }
 
   return (
-    <div className="h-full flex flex-col justify-between items-end max-w-7xl mx-auto">
-      <nav className="hidden sm:flex flex-col ml-0 w-[400px] min-h-full bg-custom-blue px-0 pt-4">
+    <div className="hidden h-full lg:flex flex-col justify-between items-end max-w-7xl mx-auto">
+      <nav className="flex-col ml-0 w-[400px] min-h-full bg-custom-blue px-0 pt-4">
 
         <h4 className="font-bold text-lg text-white mt-4 mb-28  text-center lg:text-xl">
           Connection.ai
         </h4>
 
-        {icons.map((icon, index) => (
+        {menuItems.map((icon, index) => (
           renderMenu(icon.icon, icon.text, index)
         ))}
 

@@ -1,1 +1,510 @@
-{"_type":"export","__export_format":4,"__export_date":"2025-03-18T08:42:17.032Z","__export_source":"insomnia.desktop.app:v2023.5.8","resources":[{"_id":"req_e1c593d2039f43b5ad66bdee7c6faa53","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1741886363219,"created":1741884039725,"url":"{{ _.baseUrl }}ai/request-openai","name":"Chat-OpenAI","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"llm\": \"gpt-4o\",\n\t\"agentObjective\": \"Você é um coach de carreira. Responda a pergunta do usuário\",\n\t\"prompt\": \"Quais os critérios para avaliação de um candidato PCD?\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1741884039725,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_350f674d0edb4740904ff7de165fbe30","parentId":null,"modified":1741984172563,"created":1741984172563,"name":"Dev","description":"","scope":"collection","_type":"workspace"},{"_id":"req_340fa114bc8346cda80163f097ba7041","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1741892710356,"created":1741891294091,"url":"{{ _.baseUrl }}ai/request-deepseek","name":"Chat-Deepseek","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"agentObjective\": \"Você é um coach de carreira. Responda a pergunta do usuário\",\n\t\"prompt\": \"Quais os critérios para avaliação de um candidato PCD?\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1740710265175.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_820260aa7c0a46c2a6d860d6b02cfa9a","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1741894995467,"created":1741894901774,"url":"{{ _.baseUrl }}ai/request-gemini","name":"Chat-Gemini","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"agentObjective\": \"Você é um coach de carreira. Responda a pergunta do usuário\",\n\t\"prompt\": \"Quais os critérios para avaliação de um candidato PCD?\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1740123377900.75,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_b460ef8915bb4f46aca9eebcc84a66c5","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1742196831924,"created":1741984189418,"url":"{{ _.baseUrl }}upload-resume","name":"Upload-blob-resume","description":"","method":"POST","body":{"mimeType":"multipart/form-data","params":[{"id":"pair_cc1dc692aa2f4fa0aa2e148a61bd120b","name":"file","value":"","description":"","type":"file","fileName":"C:\\Users\\santo\\Downloads\\resumes-20250314T212720Z-001\\resumes\\resume_01.pdf"}]},"parameters":[],"headers":[{"name":"Content-Type","value":"multipart/form-data"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1739822207950.375,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_541a6d344f4748d7b4e9c7af03eb97ab","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1742284590143,"created":1742050692623,"url":"{{ _.baseUrl }}upload-resume","name":"Upload-resume","description":"","method":"POST","body":{"mimeType":"multipart/form-data","params":[{"id":"pair_cc1dc692aa2f4fa0aa2e148a61bd120b","name":"file","value":"","description":"","type":"file","fileName":"C:\\Users\\santo\\Downloads\\resumes-20250314T212720Z-001\\resumes\\resume_03.pdf"}]},"parameters":[],"headers":[{"name":"Content-Type","value":"multipart/form-data"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1739671622975.1875,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_faf304ae7fac4b3882b47afda4827758","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1741883829539,"created":1741883829539,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1741883829539,"_type":"environment"},{"_id":"jar_83b7bdb1540749ef878a7e2744bf3d17","parentId":"wrk_350f674d0edb4740904ff7de165fbe30","modified":1741883829541,"created":1741883829541,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"env_0654078199444e40832fc316e0dcb7de","parentId":"env_faf304ae7fac4b3882b47afda4827758","modified":1742050758260,"created":1741883891457,"name":"Nextjs","data":{"baseUrl":"http://localhost:3000/api/"},"dataPropertyOrder":{"&":["baseUrl"]},"color":"#26f50a","isPrivate":true,"metaSortKey":1741883891457,"_type":"environment"},{"_id":"env_bb2af6c9b9b5478aa7e8a28a9c477be1","parentId":"env_faf304ae7fac4b3882b47afda4827758","modified":1742050809348,"created":1742050743704,"name":"Python","data":{"baseUrl":"https://connectiafunction.azurewebsites.net/api/"},"dataPropertyOrder":{"&":["baseUrl"]},"color":null,"isPrivate":false,"metaSortKey":1742050743704,"_type":"environment"}]}
+type: collection.insomnia.rest/5.0
+name: Dev
+meta:
+  id: wrk_c433259e5fa54c34ab519f827c02e4ac
+  created: 1741883829536
+  modified: 1741883829536
+collection:
+  - url: "{{ _.baseUrl }}ai/request-openai"
+    name: Chat-OpenAI
+    meta:
+      id: req_5f6b4777390a416d884d39d4dbf3e2fd
+      created: 1741884039725
+      modified: 1741886363219
+      isPrivate: false
+      sortKey: -1741884039725
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"llm": "gpt-4o",
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}ai/request-openai"
+    name: Chat-OpenAI
+    meta:
+      id: req_de50840bc6ab417fb9c4f806f70c776c
+      created: 1741884039725
+      modified: 1741886363219
+      isPrivate: false
+      sortKey: -1741884039725
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"llm": "gpt-4o",
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}ai/request-deepseek"
+    name: Chat-Deepseek
+    meta:
+      id: req_071bfe27c8644ead8c1d4d18c0093245
+      created: 1741891294091
+      modified: 1741892710356
+      isPrivate: false
+      sortKey: -1740710265175.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}ai/request-deepseek"
+    name: Chat-Deepseek
+    meta:
+      id: req_48661ce1d8074e609c02867d554c11a5
+      created: 1741891294091
+      modified: 1741892710356
+      isPrivate: false
+      sortKey: -1740710265175.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}ai/request-gemini"
+    name: Chat-Gemini
+    meta:
+      id: req_2aac62402609469e8fcb7c9290144d1b
+      created: 1741894901774
+      modified: 1741894995467
+      isPrivate: false
+      sortKey: -1740123377900.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}ai/request-gemini"
+    name: Chat-Gemini
+    meta:
+      id: req_c423b29924f84099b708915e8489fe71
+      created: 1741894901774
+      modified: 1741894995467
+      isPrivate: false
+      sortKey: -1740123377900.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"agentObjective": "Você é um coach de carreira. Responda a pergunta do usuário",
+        	"prompt": "Quais os critérios para avaliação de um candidato PCD?"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}upload-resume"
+    name: Upload-blob-resume
+    meta:
+      id: req_e0c19f0e72374da7a9cf8b1859d8ca36
+      created: 1741984189418
+      modified: 1742196831924
+      isPrivate: false
+      sortKey: -1739822207950.375
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_cc1dc692aa2f4fa0aa2e148a61bd120b
+          name: file
+          type: file
+          fileName: C:\Users\santo\Downloads\resumes-20250314T212720Z-001\resumes\resume_01.pdf
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}upload-resume"
+    name: Upload-resume
+    meta:
+      id: req_8d4dc6814b0a436f87ee6a282d98c6a6
+      created: 1742050692623
+      modified: 1742387479683
+      isPrivate: false
+      sortKey: -1739671622975.1875
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_cc1dc692aa2f4fa0aa2e148a61bd120b
+          name: file
+          type: file
+          fileName: D:\Users\wsantos-g4f\Downloads\resumes\resume_04.pdf
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}career-plan"
+    name: Career-plan
+    meta:
+      id: req_4bacb6603e5646a99e17d4815158d648
+      created: 1742391972471
+      modified: 1742403959201
+      isPrivate: false
+      sortKey: -1739604056800.5938
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"perfil": {  "Nome": "John W. Smith",  "Endereço": "2002 Front Range Way, Fort Collins, CO 80525",  "Resumo": "Quatro anos de experiência em desenvolvimento infantil inicial, com uma formação diversificada no cuidado de crianças e adultos com necessidades especiais.",  "Experiência": [    {      "Cargo": "Counseling Supervisor",      "Empresa": "The Wesley Center, Little Rock, Arkansas",      "Período": "1999-2002",      "Descrição": "Supervisão de aconselhamento e cuidado de clientes com necessidades especiais."    },    {      "Cargo": "Client Specialist",      "Empresa": "Rainbow Special Care Center, Little Rock, Arkansas",      "Período": "1997-1999",      "Descrição": "Especialista no atendimento a clientes com necessidades especiais."    },    {      "Cargo": "Teacher's Assistant",      "Empresa": "Cowell Elementary, Conway, Arkansas",      "Período": "1996-1997",      "Descrição": "Assistente de professores na gestão de atividades diárias em sala de aula."    }  ],  "Skills": [    "Experiência em cuidado de adultos",    "Determinação de locais de trabalho para 150 clientes com necessidades especiais",    "Manutenção de bases de dados e registros de clientes",    "Coordenação de contato com profissionais de saúde locais",    "Gestão de 25 voluntários",    "Experiência em cuidado infantil",    "Coordenação de serviços para conselheiros e famílias de clientes",    "Planejamento de atividades diárias e passeios para clientes",    "Assistência às famílias de clientes especiais na pesquisa de assistência financeira e cuidados de saúde",    "Apoio na gestão de atividades em sala de aula",    "Coordenação de atividades diárias e especiais para estudantes"  ],  "Educação": {    "EnsinoMédio": [],    "Técnico": [],    "Graduação": [      {        "Curso": "BS em Desenvolvimento Infantil Inicial",        "Instituição": "University of Arkansas at Little Rock, Little Rock, AR",        "Período": "1999"      },      {        "Curso": "BA em Educação Elementar",        "Instituição": "University of Arkansas at Little Rock, Little Rock, AR",        "Período": "1998"      }    ],    "Pós-Graduação": [],    "Mestrado": [],    "Doutorado": [],    "Pós-Doutorado": [],    "PhD": [],    "Certificações": [],    "CursosComplementares": []  },  "Telefone": "Não informado",  "Email": "jwsmith@colostate.edu"}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}"
+    name: Interview
+    meta:
+      id: req_1a879b710b7d4059a3c293baffab25a7
+      created: 1742403442859
+      modified: 1742403453662
+      isPrivate: false
+      sortKey: -1739570273713.2969
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+            "perfil": 
+                {
+                    "Nome": "Clara Melo Gonçalves",
+                    "Endereço": "",
+                    "Resumo": "Professora de inglês organizada com mais de 3 anos de experiência lecionando inglês para turmas do Ensino Médio. 70% dos meus alunos conseguiram certificações internacionais de inglês. Tendo morado na Inglaterra por dois anos, busco a oportunidade de apresentar a cultura inglesa para os alunos do Colégio Aprender.",
+                    "Experiência": [
+                        {
+                            "Cargo": "Professora de Inglês do Ensino Médio",
+                            "Empresa": "Escola Carmem Dias",
+                            "Período": "01/2021 - atual",
+                            "Descrição": "Lecionei inglês para 12 turmas da 1ª à 3ª série do Ensino Médio. Desenvolvi material didático extra para atender às necessidades de alunos com diferentes níveis de inglês. Ofereci plantão pedagógico semanal com reforço para os alunos com dificuldade, contribuindo para um aumento de 35% das notas dos participantes. Ministrei aulas culturais, levando alunos a museus e teatros. 70% dos meus alunos conseguiram certificações internacionais."
+                        },
+                        {
+                            "Cargo": "Estagiária de Tradução (Inglês - Português)",
+                            "Empresa": "Worldwide Traduções",
+                            "Período": "02/2020 - 12/2020",
+                            "Descrição": "Traduzi cerca de 8.000 palavras por semana, de textos literários, documentos técnicos e contratos. Fiz traduções em nuvem usando o Trados. Editei cerca de 5 textos semanais. Realizei revisão e preparação de textos traduzidos por outros tradutores. Recebi avaliação positiva da dona da empresa."
+                        }
+                    ],
+                    "Skills": [
+                        "Comunicação oral e escrita",
+                        "Responsabilidade e pontualidade",
+                        "Organização e gestão do tempo de aula",
+                        "Metodologias de ensino tradicionais e com infraestruturas tecnológicas",
+                        "Técnicas de tradução para literatura e textos técnicos",
+                        "Domínio do Trados",
+                        "Domínio de Microsoft Office, incluindo Excel"
+                    ],
+                    "Educação": {
+                        "EnsinoMédio": [],
+                        "Técnico": [],
+                        "Graduação": [
+                            {
+                                "Curso": "Bacharelado em Letras - Português e Inglês",
+                                "Instituição": "Universidade Católica de Brasília",
+                                "Período": "2016 - 2019"
+                            }
+                        ],
+                        "Pós-Graduação": [],
+                        "Mestrado": [],
+                        "Doutorado": [],
+                        "Pós-Doutorado": [],
+                        "PhD": [],
+                        "Certificações": [],
+                        "CursosComplementares": [
+                            {
+                                "Curso": "Intercâmbio em Letras",
+                                "Instituição": "Universidade de Oxford - Inglaterra",
+                                "Período": "01/2019 - 06/2019"
+                            }
+                        ]
+                    },
+                    "Telefone": "(99) 99999-9999",
+                    "Email": "clara.gokalves@email.com.br"
+                }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.baseUrl }}chat"
+    name: Chat-Azure
+    meta:
+      id: req_7e8c9c4152724f8f9a21f03e1d108fa3
+      created: 1742489102266
+      modified: 1742495936796
+      isPrivate: false
+      sortKey: -1739553382169.6484
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"chat": [
+        		{
+        			"role": "assistant",
+        			"content": "Olá! Recebi seu e-mail. Como posso ajudá-lo hoje?"
+        		},
+        		{
+        			"role": "user",
+        			"content": "Olá! Qual foi o último curso de capacitação do candidato?"
+        		}
+        	],
+        	"perfil":
+        		{
+        			"Nome": "Arthur Rodrigues Alves",
+        			"Endereço": "Rua 23 de Novembro, 100, Apartamento 1025, Vila Progresso, São Paulo, SP",
+        			"Resumo": "Estudante do 4º semestre de Engenharia de Produção, com experiência em produção em empresa de grande porte. Inglês fluente e conhecimentos intermediários de Espanhol. Busca oportunidade na área de formação, preferencialmente voltada para desenvolvimento de novos produtos.",
+        			"Experiência": [
+        			{
+        				"Cargo": "Estagiário",
+        				"Empresa": "ABC Brasil S/A",
+        				"Período": "03/2017 - 06/2018",
+        			"Descrição": "Responsável pelos apontamentos de produção e realização de procedimentos de controle de qualidade."
+        			}
+        			],
+        			"Skills": [
+        			"Inglês",
+        			"Negociação",
+        			"Solidworks",
+        			"Autocad",
+        			"Voluntariado"
+        			],
+        			"Educação": {
+        			"EnsinoMédio": [],
+        			"Técnico": [],
+        			"Graduação": [
+        			{
+        			"Curso": "Engenharia de Produção",
+        			"Instituição": "Universidade Estadual de Campinas - Unicamp",
+        			"Período": "03/2017 - Atual"
+        			}
+        			],
+        			"Pós-Graduação": [],
+        			"Mestrado": [],
+        			"Doutorado": [],
+        			"Pós-Doutorado": [],
+        			"PhD": [],
+        			"Certificações": [],
+        			"CursosComplementares": [
+        			{
+        			"Curso": "Eletrônica Industrial",
+        			"Instituição": "Serviço Nacional da Indústria - Senai",
+        			"Período": "08/2017 - 12/2017"
+        			}
+        			]
+        			},
+        			"Telefone": "(11) 9999-0000",
+        			"Email": "[contato@meucurriculo.pro](mailto:contato@meucurriculo.pro)"
+        		}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5216fd22aec119543ba92f89026ca90072a26fdf
+    created: 1741883829541
+    modified: 1742387503777
+  cookies:
+    - key: ARRAffinity
+      value: 18fed31e368766a53bb8fe371f0ed7ccd1f6a365bc060d196ee530f5fa81d570
+      domain: lemon-tree-0971eed0f.6.azurestaticapps.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2025-03-19T12:31:43.775Z
+      lastAccessed: 2025-03-19T12:31:43.775Z
+      id: 1832baec-d829-4c77-a89e-2eaaccb70d91
+    - key: ARRAffinitySameSite
+      value: 18fed31e368766a53bb8fe371f0ed7ccd1f6a365bc060d196ee530f5fa81d570
+      domain: lemon-tree-0971eed0f.6.azurestaticapps.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+      creation: 2025-03-19T12:31:43.777Z
+      lastAccessed: 2025-03-19T12:31:43.777Z
+      sameSite: none
+      id: 8040bef9-b4bd-47ea-aef5-d330bb4f0da0
+environments:
+  name: Base Environment
+  meta:
+    id: env_5216fd22aec119543ba92f89026ca90072a26fdf
+    created: 1741883829539
+    modified: 1741883829539
+    isPrivate: false
+  subEnvironments:
+    - name: AZ-Career-Plan
+      meta:
+        id: env_2f1647ed69dd4fbbb74a66b6d662a7bc
+        created: 1741883891457
+        modified: 1742403056779
+        isPrivate: true
+        sortKey: 1741883891457
+      data:
+        baseUrl: https://connectiafunction.azurewebsites.net/api/gerar_plano?code=eM9wYMVOvhmsSTsj9Rm6ADobUS7tVe3e9BfQ7c04sPe1AzFuwl7pVw==
+      color: "#26f50a"
+    - name: Dev
+      meta:
+        id: env_f25fec1ae50a4afb90fa8aa7d403f6aa
+        created: 1741883891457
+        modified: 1741884022251
+        isPrivate: true
+        sortKey: 1741883891457
+      data:
+        baseUrl: http://localhost:3000/api/
+      color: "#26f50a"
+    - name: Python
+      meta:
+        id: env_d81c8d1d04a848cc98ad28eeb3bf81d0
+        created: 1742050743704
+        modified: 1742050809348
+        isPrivate: false
+        sortKey: 1742050743704
+      data:
+        baseUrl: https://connectiafunction.azurewebsites.net/api/
+    - name: AZ-Interview
+      meta:
+        id: env_aec04169eba5446a85cf7c18c8068e95
+        created: 1742403557771
+        modified: 1742403575017
+        isPrivate: true
+        sortKey: 1741967317580.5
+      data:
+        baseUrl: https://connectiafunction.azurewebsites.net/api/gerar_entrevista?code=eM9wYMVOvhmsSTsj9Rm6ADobUS7tVe3e9BfQ7c04sPe1AzFuwl7pVw==
+      color: "#26f50a"

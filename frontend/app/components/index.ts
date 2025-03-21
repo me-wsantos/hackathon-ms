@@ -1,7 +1,6 @@
 export * from "./About";
 export * from "./ChatContainer";
 export * from "./GptMessage";
-export * from "./GptMessageAnalysis";
 export * from "./MyMessage";
 export * from "./Sidebar";
 export * from "./TextMessageBox";

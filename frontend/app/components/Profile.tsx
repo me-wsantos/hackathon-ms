@@ -30,15 +30,16 @@ export const Profile = () => {
         <div className="h-auto flex flex-col p-0 w-100">
           <section className="h-full flex flex-col justify-start">
             <div className="h-full pb-0 flex justify-start items-end border-b-2">
-              <FaRegUser size={35} color={"#000"} className="mr-4 mb-[.4rem]" />
+              <FaRegUser color={"#000"} className="mr-4 mb-[.4rem] w-6 h-6" />
               <div
-                className="w-full p-0 text-custom-blue-100 text-xl items-end leading-normal font-bold text-start md:text-2xl">
+                className="w-full p-0 text-xl items-end leading-normal font-bold text-start md:text-2xl">
                 Profile
               </div>
             </div>
-            <div className="flex mt-8">
-              <div className="min-w-[70%] pr-12">
-                <div className="pb-2">
+
+            <div className="flex flex-col mt-8 lg:flex-row">
+              <div className="w-full lg:min-w-[70%] lg:pr-12">
+                <div className="w-full pb-2">
                   <span className="font-semibold mr-2">Name:</span>
                   <span>{profile.Nome}</span>
                 </div>

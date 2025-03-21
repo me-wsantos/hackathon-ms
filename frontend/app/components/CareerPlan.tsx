@@ -9,7 +9,7 @@ export const CareerPlan = () => {
 
   return (
     <div className="flex flex-col flex-shrink-0 rounded-2xl h-[calc(100vh-150px)] p-4">
-      <div className="upload-section ">
+      <div className="upload-section">
         <div className="h-auto flex flex-col p-0 w-100">
           <section className="h-full flex flex-col justify-start">
             <div className="h-full pb-0 flex justify-start items-end border-b-2">
@@ -19,7 +19,7 @@ export const CareerPlan = () => {
                 Career Plan
               </div>
             </div>
-            <div className="max-w-full flex mt-8 border">
+            <div className="max-w-full flex mt-8">
               <div className="max-w-full pr-12">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {careerPlan}

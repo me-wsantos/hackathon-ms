@@ -1,29 +1,59 @@
 "use client"
+import { useEffect, useRef } from "react";
 import useAppContext from "../context/appContext";
-import { GptMessage, MyMessage, GptMessageAnalysis, TextMessageBox } from "./"
+import { GptMessage, MyMessage, TextMessageBox } from "./"
 import { chatService } from "../services";
 import { IMessage } from "../interfaces";
 import { UploadResume } from "./";
 import { TypingLoader } from "./loaders/TypingLoader";
 
 export const ChatContainer = () => {
-  const { messages, setMessages, isLoading, setIsLoading, isUploaded } = useAppContext();
+  const { isLoading, setIsLoading, isUploaded, chatMessages, setChatMessages, profile } = useAppContext();
+
+  const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      const scrollContainer = scrollContainerRef.current as HTMLDivElement;
+      scrollContainer.scrollTop = scrollContainer.scrollHeight;
+    }
+  }, [chatMessages]);
 
   const handlePost = async (text: string) => {
-    setIsLoading(true)
-    setMessages((prev: IMessage[]) => [...prev, { text, isGpt: false }])
+    setIsLoading(true);
 
-    const { data } = await chatService({ prompt: text })
+    // Adiciona a mensagem do usuário
+    const newUserMessage = { role: "user", content: text };
+    const updatedMessages = [...chatMessages, newUserMessage];
+    setChatMessages(updatedMessages);
 
-    if (data == undefined) {
-      setMessages((prev: IMessage[]) => [...prev, {
-        text: "Sorry, it was not possible to answer your question. Please try again.",
-        isGpt: true
-      }])
-    } else {
-      setMessages((prev: IMessage[]) => [...prev, { text: data, isGpt: true }])
+    try {
+      const { data } = await chatService({ chat: updatedMessages.slice(1), perfil: profile });
+
+      if (data && data.status !== "fail") {
+        const newAssistantMessage = {
+          role: "assistant",
+          content: data.response.content
+        };
+
+        setChatMessages((prev: any) => [...prev, newAssistantMessage]);
+      } else {
+        const errorMessage = {
+          role: "assistant",
+          content: "Sorry, it was not possible to answer your question. Please try again."
+        };
+        setChatMessages((prev: any) => [...prev, errorMessage]);
+      }
+    } catch (error) {
+      console.error("Error in chat service:", error);
+      const errorMessage = {
+        role: "assistant",
+        content: "An error occurred. Please try again later."
+      };
+      setChatMessages((prev: any) => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false)
   }
 
   return (
@@ -31,28 +61,23 @@ export const ChatContainer = () => {
       <div>
         <UploadResume />
       </div>
-      <div className="chat-messages">
+      
+      <div 
+        className={`${isUploaded ? 'mt-0' : 'mt-24 lg:mt-6' } chat-messages`}
+        ref={scrollContainerRef}
+      >
         <div className="flex flex-col">
-          <GptMessage text="Hello! Please upload a resume so I can analyze it." />
 
-          {isUploaded && (
-            <GptMessage text={`I have received your resume. How can I help you?`} />
-          )
-          }
 
-          {
-            messages.map((message, index) => (
-              message.isGpt
-                ? (message.isAnalysis ? <GptMessageAnalysis key={index} /> : <GptMessage key={index} text={message.text} />)
-                : (<MyMessage key={index} text={message.text} />)
-            ))
-          }
+          {chatMessages.map((message: IMessage, index: number) => (
+            message.role === "assistant"
+              ? <GptMessage key={index} text={message.content} />
+              : <MyMessage key={index} text={message.content} />
+          ))}
 
-          {
-            isLoading && (
-              <TypingLoader className="fade-in" />
-            )
-          }
+          {isLoading && (
+            <TypingLoader className="fade-in" />
+          )}
         </div>
       </div>
 

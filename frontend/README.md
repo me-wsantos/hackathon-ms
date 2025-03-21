@@ -1,7 +1,7 @@
 ## HACKATON MICROSOFT
-## Projeto: App para análise curricular
-<!-- :earth_americas: <a href="https://brasilmaisprodutivo.mdic.gov.br/" target="_blank">Link para o projeto</a> -->
-<!-- <br> -->
+## Projeto: Connection.ai - App para análise curricular
+:earth_americas: <a href="https://lemon-tree-0971eed0f.6.azurestaticapps.net/" target="_blank">Link para o projeto</a>
+<br>
 <hr>
 
 ### :zap: Tecnologias

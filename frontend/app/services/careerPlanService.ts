@@ -9,9 +9,9 @@ export const careerPlanService = async (perfil: any) => {
     });
 
     if (response.status === 200) {
-      const result = response.data;
-
-      return { status: "success", data: result };
+      return response;
+      //const result = response.data;
+      //return { status: "success", data: result };
     } else {
       return { status: "fail", error: response.statusText };
     }

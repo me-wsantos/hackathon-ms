@@ -19,9 +19,8 @@ export interface IDataAnalysis {
 }
 
 export interface IMessage {
-  text: string;
-  isGpt: boolean;
-  isAnalysis?: boolean;
+  role: "assistant" | "user";
+  content: string;
 }
 
 export interface IUser {
@@ -31,13 +30,13 @@ export interface IUser {
 
 export interface IAppContext {
   dataAnalysis: IDataAnalysis[]
-  setDataAnalysis(value: IDataAnalysis[]):void
+  setDataAnalysis(value: IDataAnalysis[]): void
   messages: IMessage[],
-  setMessages(value: any):void
+  setMessages(value: any): void
   analysisPeriod: string
   setAnalysisPeriod(value: string): void
   isLoading: boolean
-  setIsLoading(value:boolean):void
+  setIsLoading(value: boolean): void
   moduleActive: number,
   setModuleActive(value: number): void
   profile: any,
@@ -56,11 +55,7 @@ export interface IAppContext {
   setLoadingCareerPlan(value: boolean): void
   loadingInterview: boolean
   setLoadingInterview(value: boolean): void
+  chatMessages: any,
+  setChatMessages(value: any): void
 }
 
-export interface IAgents {
-  role: string;
-  backstory: string;
-  goal: string;
-  llm: string;
-}

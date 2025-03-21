@@ -18,6 +18,10 @@ export const AppContextProvider = ({ children }: any) => {
   const [loadingProfile, setLoadingProfile] = useState(false)
   const [loadingCareerPlan, setLoadingCareerPlan] = useState(false)
   const [loadingInterview, setLoadingInterview] = useState(false)
+  const [chatMessages, setChatMessages] = useState<IMessage[]>([{
+    role: "assistant",
+    content: "Hello! Please upload a resume so I can analyze it."
+  }]);
 
   return (
     <AppContext.Provider value={{
@@ -33,7 +37,8 @@ export const AppContextProvider = ({ children }: any) => {
       interview, setInterview,
       loadingProfile, setLoadingProfile,
       loadingCareerPlan, setLoadingCareerPlan,
-      loadingInterview, setLoadingInterview
+      loadingInterview, setLoadingInterview,
+      chatMessages, setChatMessages,
     }}>
       {children}
     </AppContext.Provider>
