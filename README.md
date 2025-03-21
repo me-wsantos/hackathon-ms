@@ -64,7 +64,8 @@ The solution consists of the following main components:
 4. **Azure Functions**
    - Executes the asynchronous processing of resumes and the generation of a career plan and interview questionnaire.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Flying%20Saucer.png" alt="Flying Saucer" width="35" height="35" /> Tecnologias Utilizadas
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Flying%20Saucer.png" alt="Flying Saucer" width="35" height="35" /> Technologies Used
+- **Azure Static Web App**: A service that automatically builds and deploys full-stack web apps to Azure from a GitHub repository.
 - **Azure Storage**: Microsoft Azure's scalable and durable storage service for storing unstructured data.
 - **Azure Functions**: Azure's serverless computing platform that allows you to run small pieces of code (functions) in response to events.
 - **Azure API Management**: Azure service for publishing, securing, transforming, and analyzing APIs, enabling centralized management of access to back-ends and the creation of API gateways.
