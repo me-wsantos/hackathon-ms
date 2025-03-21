@@ -2,18 +2,33 @@
 
 ![capa](https://github.com/devcaiada/connection.ai/blob/main/assets/capa.jpg?raw=true)
 
-A *Connection.ai* é uma inovadora plataforma de inteligência artificial destinada a transformar a forma como analisamos currículos e preparamos candidatos para o mercado de trabalho. O projeto é guiado pelos princípios de **imparcialidade e inclusividade**, garantindo que todos os candidatos sejam avaliados de forma justa e equitativa, sem distinção com base em deficiência ou qualquer outro critério discriminatório.
+A Connection.ai é uma plataforma inovadora de inteligência artificial dedicada a transformar a maneira como pessoas com deficiência são preparadas e conectadas a oportunidades de emprego apoiado. Nosso objetivo é superar barreiras e promover a inclusão no mercado de trabalho, garantindo que cada indivíduo receba o suporte necessário para alcançar o sucesso profissional.
 
-Os sistemas de IA da *Connection.ai* são desenvolvidos para tratar todos de forma justa, garantindo que candidatos com qualificações, experiências e competências semelhantes recebam as mesmas recomendações e oportunidades, promovendo um ambiente de recrutamento mais acessível e justo.
+### **Princípios fundamentais:**
+- **Inclusão**: Desenvolvemos soluções que consideram as necessidades específicas de pessoas com deficiência, desde a análise de habilidades e interesses até a identificação de oportunidades de emprego adequadas.
+- **Personalização**: Oferecemos suporte individualizado, incluindo orientação profissional, treinamento de habilidades e acompanhamento contínuo, para garantir que cada pessoa tenha as ferramentas e o apoio necessários para prosperar.
+- **Empoderamento**: Acreditamos no potencial de cada indivíduo e nos esforçamos para criar um ambiente onde pessoas com deficiência possam alcançar sua independência e realizar seus objetivos de carreira.
+- **Transparência**: As decisões e recomendações geradas pela IA são claras e compreensíveis, permitindo que os usuários entendam como chegamos a determinados resultados.
+- **Justiça e Imparcialidade**: Nossos algoritmos são projetados para evitar vieses discriminatórios, garantindo que todos os candidatos sejam avaliados de forma justa e equitativa, independentemente de sua deficiência ou outras características pessoais.
+- **Privacidade e Segurança**: Protegemos os dados pessoais dos usuários com as mais rigorosas medidas de segurança e privacidade, garantindo que suas informações sejam usadas de forma ética e responsável.
+- **Responsabilidade**: Assumimos a responsabilidade pelo impacto de nossas soluções de IA na vida das pessoas, monitorando continuamente nossos sistemas para garantir que eles estejam alinhados com nossos princípios e valores.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" alt="Bullseye" width="35" height="35" /> Escopo do Projeto
-### **1. Análise Curricular Automatizada**
-- Os usuários poderão fazer upload dos currículos, que serão analisados pela IA para identificar habilidades, experiências e lacunas de competências.
-- Com base na análise, será gerado um plano de desenvolvimento individual, destacando áreas de melhoria e sugerindo cursos e certificações necessárias para impulsionar a carreira.
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" alt="Bullseye" width="35" height="35" /> Nossas soluções
+### **1. Extração Inteligente de Currículos (Azure Document Intelligence)**
+- Utilizamos o Azure Document Intelligence para extrair informações cruciais de currículos de forma rápida e precisa.
+- Isso reduz significativamente o tempo de análise de currículos, garante que nenhum talento seja negligenciado e permite uma correspondência mais eficiente entre candidatos e vagas. Essa automatização assegura uma análise imparcial, focando nas qualificações e experiências relevantes.
 
-### **2. Simulação de Entrevista Personalizada**
-- A IA criará simulados de entrevista baseados no perfil do candidato e nos requisitos da vaga desejada, proporcionando uma experiência de entrevista prática e focada.
-- Feedback em tempo real será oferecido, permitindo aos candidatos ajustarem suas respostas e abordagens antes de uma entrevista real.
+### **2. Plano de Carreira Personalizado**
+- O sistema realiza uma análise SWOT (Forças, Fraquezas, Oportunidades e Ameaças) detalhada do candidato.
+- Essa análise fornece uma visão clara das competências do candidato e das áreas que precisam de desenvolvimento. O plano de carreira resultante é um guia estratégico para o crescimento profissional, ajudando o indivíduo a focar em suas metas e a superar desafios. Isso aumenta a autoconfiança e a motivação, essenciais para uma trajetória de sucesso.
+
+### **3. Questionário de Entrevista Personalizado**
+- O sistema gera um questionário de entrevista sob medida para auxiliar o treinador a conduzir entrevistas mais eficazes.
+- O questinário ajuda a identificar talentos únicos e áreas de melhoria específicas para cada candidato.
+- O questionário personalizado permite uma avaliação mais completa e justa, garantindo que o candidato tenha a oportunidade de destacar suas habilidades e experiências relevantes. Isso facilita a criação de planos de desenvolvimento individualizados e o acompanhamento do progresso do candidato.
+
+
+
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="35" height="35" /> Arquitetura do Projeto
 
