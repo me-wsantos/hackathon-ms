@@ -27,9 +27,11 @@ A Connection.ai é uma plataforma inovadora de inteligência artificial dedicada
 - O questinário ajuda a identificar talentos únicos e áreas de melhoria específicas para cada candidato.
 - O questionário personalizado permite uma avaliação mais completa e justa, garantindo que o candidato tenha a oportunidade de destacar suas habilidades e experiências relevantes. Isso facilita a criação de planos de desenvolvimento individualizados e o acompanhamento do progresso do candidato.
 
-
-
-
+### **4. ChatBot**
+- Uma ferramenta de chat inteligente que auxilia o treinador a obter informações rápidas e personalizados sobre o candidato.
+- Esse assistente responde a perguntas específicas sobre o perfil do candidato, como habilidades, experiências e áreas de interesse, com base nas informações extraídas do currículo e de outras fontes de dados.
+- Isso economiza tempo do treinador, permitindo que ele se concentre em aspectos mais estratégicos do processo de recrutamento e desenvolvimento. Além disso, o ChatBot pode fornecer insights adicionais que poderiam passar despercebidos em uma análise manual.
+  
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="35" height="35" /> Arquitetura do Projeto
 
 ![arquitecture](https://github.com/devcaiada/connection.ai/blob/main/assets/arquitecture.png?raw=true)
@@ -43,24 +45,24 @@ A solução é composta pelos seguintes componentes principais:
 
 ### **Backend**
 - Construído em **Python**.
-- Responsável pelo processamento dos currículos e geração de entrevistas personalizadas.
+- Responsável por atender as requisições para extração de dados dos currículos, geração de plano de carreira e questionário de entrevista.
 - Utiliza **Azure Functions** para processamento assíncrono.
 
 ### **Serviços Utilizados**
 1. **Document Intelligence (Azure AI Services)**
    - Extrai informações estruturadas dos currículos em PDF.
-   - Utiliza um modelo personalizado para interpretar dados relevantes.
+   - Utiliza um modelo personalizado neural para extrair dados relevantes.
 
 2. **Azure OpenAI**
-   - Analisa o perfil dos candidatos e sugere cursos.
-   - Gera perguntas e conduz a simulação de entrevistas.
-   - Fornece feedback automatizado em tempo real.
+   - Analisa o perfil dos candidatos e gera um plano de carreira personalizado.
+   - Gera um questionário de entrevista baseado no perfil do candidato contribuindo na condução de entrevistas técnicas.
+   - Interaje com o treinador respondendo perguntas sobre o candidato através de um chat.
 
 3. **Azure Storage**
-   - Armazena temporariamente os arquivos de currículo para processamento pelo Document Intelligence.
+   - Armazena os arquivos de currículo para processamento pelo Document Intelligence.
 
 4. **Azure Functions**
-   - Executa o processamento assíncrono dos currículos e a geração de entrevistas personalizadas.
+   - Executa o processamento assíncrono dos currículos e a geração de plano de carreira e questionário de entrevistas.
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Flying%20Saucer.png" alt="Flying Saucer" width="35" height="35" /> Tecnologias Utilizadas
 - **Next.js**: Framework React para desenvolvimento de aplicações web.
