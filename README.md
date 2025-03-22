@@ -1,6 +1,6 @@
 # Connection.ai - Artificial Intelligence for Recruitment and Professional Development
 
-![capa](https://github.com/devcaiada/connection.ai/blob/main/assets/capa.jpg?raw=true)
+![capa](https://github.com/me-wsantos/hackathon-ms/blob/main/assets/capa.jpg?raw=true)
 
 Connection.ai is an innovative artificial intelligence platform dedicated to transforming the way people with disabilities are prepared and connected to supported employment opportunities. Our goal is to overcome barriers and promote inclusion in the labor market, ensuring that each individual receives the necessary support to achieve professional success.
 
@@ -36,7 +36,7 @@ Connection.ai is an innovative artificial intelligence platform dedicated to tra
   
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="35" height="35" /> Project Architecture
 
-![arquitecture](https://github.com/devcaiada/connection.ai/blob/main/assets/arquitecture.png?raw=true)
+![arquitecture](https://github.com/me-wsantos/hackathon-ms/blob/main/assets/arquitecture.png?raw=true)
 
 The solution consists of the following main components:
 
@@ -89,7 +89,7 @@ The solution consists of the following main components:
 - **Career Plan**: Generation of a personalized career plan for the candidate.
 - **Interview Questionnaire**: Generation of a personalized technical interview questionnaire.
 
-![front](https://github.com/devcaiada/connection.ai/blob/main/assets/front.png?raw=true)
+![front](https://github.com/me-wsantos/hackathon-ms/blob/main/assets/front.png?raw=true)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Ferris%20Wheel.png" alt="Ferris Wheel" width="40" height="40" /> Operation Flow
 1. **Upload the resume** via frontend.
@@ -106,13 +106,13 @@ Follow our demonstration video and see live all the features of this powerful to
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=v6kudNNhla0&ab_channel=CaioArruda">
-    <img src="https://github.com/devcaiada/connection.ai/blob/main/assets/capa.png?raw=true" alt="Youtube">
+    <img src="https://github.com/me-wsantos/hackathon-ms/blob/main/assets/capa.png?raw=true" alt="Youtube">
   </a>
 </p>
 
 Presentation
 
-[![ppt](https://github.com/devcaiada/connection.ai/blob/main/assets/power-point-readme.png?raw=true)](https://github.com/devcaiada/connection.ai/raw/refs/heads/main/ppt/Connection.ai.pptx)
+[![ppt](https://github.com/me-wsantos/hackathon-ms/blob/main/assets/power-point-readme.png?raw=true)](https://github.com/me-wsantos/hackathon-ms/blob/main/assets/ConnectionAI.pdf)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium%20Skin%20Tone.png" alt="Man Technologist Medium Skin Tone" width="35" height="35" /> How to Run the Project
 
